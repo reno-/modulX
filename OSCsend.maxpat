@@ -35,8 +35,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 137.0, 168.0, 87.0, 16.0 ],
-					"text" : "/layer.1/alpha"
+					"patching_rect" : [ 92.0, 171.0, 174.0, 16.0 ],
+					"text" : "/layer.1/alpha 1."
 				}
 
 			}
@@ -106,8 +106,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 76.0, 99.0, 196.0, 18.0 ],
-					"text" : "combine /layer. Numb / alpha @triggers 3"
+					"patching_rect" : [ 76.0, 99.0, 201.0, 18.0 ],
+					"text" : "combine /layer. Numb / alpha @triggers 1 3"
 				}
 
 			}
