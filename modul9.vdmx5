@@ -2804,7 +2804,7 @@
 				<dict/>
 			</dict>
 			<key>running</key>
-			<true/>
+			<false/>
 			<key>uniqueID</key>
 			<string>0x2440000005ac8507</string>
 			<key>usesDeviceCompression</key>
