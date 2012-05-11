@@ -2,15 +2,17 @@
 <PROJECT version="3040" width="1024" height="724" osc_target="-1" midi_target="-1" kbmouse_target="-1"/>
 <WINDOW class="JAZZINTERFACE" text="Default" x="0" y="0" width="1024" height="724" state="1" group="0" font="tahoma,11,0" >
 <WINDOW class="Switches" text="layerSelect" x="0" y="0" width="91" height="724" id="1" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="4423548,13304050" column="1" label="0" multicolor="0" multilabel="0" paint="0" radio="1" row="9">
-<PARAM name="x=" value="0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000" send="17" osc_target="-1" osc_trigger="1" osc_message="/layerSelect/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<PARAM name="x=" value="0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000" send="16" osc_target="-1" osc_trigger="1" osc_message="/layerSelect/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layerSelect/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
-<SCRIPT name="onPress()" script="for (decl i=0 ; i<x.length ; i++){
-
-	selecttab(layer, x);
+<SCRIPT name="onPress()" script="decl i;
+for (i=0 ; i<sizeof(x) ; i++){
+	if (x[i] == 1){
+		selecttab(layer, i);
+	}
 }" trigger_script="x" trigger_type="0" trigger="1" osc_message="/layerSelect/onPress" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 <WINDOW class="Container" text="layer" x="91" y="0" width="933" height="724" id="3" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" label="1" tabbar="0" meta="1">
-<WINDOW class="Tab" text="tab1" x="0" y="0" width="917" height="708" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="1" x="0" y="0" width="917" height="708" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_1" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -117,7 +119,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab2" x="0" y="0" width="917" height="708" id="1" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="2" x="0" y="0" width="917" height="708" id="1" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_2" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_2/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -224,7 +226,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab3" x="0" y="0" width="917" height="708" id="3" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="3" x="0" y="0" width="917" height="708" id="3" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_3" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_3/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -331,7 +333,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab4" x="0" y="0" width="917" height="708" id="4" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="4" x="0" y="0" width="917" height="708" id="4" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_4" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_4/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -438,7 +440,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab5" x="0" y="0" width="917" height="708" id="5" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="5" x="0" y="0" width="917" height="708" id="5" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_5" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_5/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -545,7 +547,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab6" x="0" y="0" width="917" height="708" id="6" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="6" x="0" y="0" width="917" height="708" id="6" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_6" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_6/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -652,7 +654,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab7" x="0" y="0" width="917" height="708" id="7" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="7" x="0" y="0" width="917" height="708" id="7" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_7" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_7/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -759,7 +761,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab8" x="0" y="0" width="917" height="708" id="8" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="8" x="0" y="0" width="917" height="708" id="8" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_8" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_8/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -866,7 +868,7 @@
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="tab9" x="0" y="0" width="917" height="708" id="9" state="1" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="9" x="0" y="0" width="917" height="708" id="9" state="1" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_9" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_9/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
