@@ -12,7 +12,7 @@ for (i=0 ; i<sizeof(x) ; i++){
 }" trigger_script="x" trigger_type="0" trigger="1" osc_message="/layerSelect/onPress" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 <WINDOW class="Container" text="layer" x="91" y="0" width="933" height="724" id="3" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" label="1" tabbar="0" meta="1">
-<WINDOW class="Tab" text="1" x="0" y="0" width="917" height="708" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="1" x="0" y="0" width="917" height="708" state="1" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_1" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -23,8 +23,8 @@ for (i=0 ; i<sizeof(x) ; i++){
 <VARIABLE name="speed=1" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/opacity/speed" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 <WINDOW class="Multiball" text="position" x="28" y="79" width="469" height="272" id="1" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="29140" cursor="1" ephemere="0" grid="0" grid_steps="1,1" label="1" multicolor="0" multilabel="0" nbr="1" physic="1" polyphony="0" zoom="1.000000">
-<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
-<PARAM name="y=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/y" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<PARAM name="x=" value="0.000000" send="21" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="-1.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<PARAM name="y=" value="0.000000" send="21" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/y" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="-1.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <PARAM name="z=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/z" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="attraction=1" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/attraction" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="friction=0.6" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/friction" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -36,6 +36,8 @@ for (i=0 ; i<sizeof(x) ; i++){
 <VARIABLE name="hold=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/hold" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="holdX=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/holdX" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="holdY=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/position/holdY" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="updateX()" script="posX.value = x[0]*2.-1;" trigger_script="x" trigger_type="0" trigger="1" osc_message="/layer/_1/position/updateX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="updateY()" script="posY.value = y[0]*2.-1;" trigger_script="y" trigger_type="0" trigger="1" osc_message="/layer/_1/position/updateY" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 <WINDOW class="Multiball" text="taille" x="28" y="351" width="469" height="272" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="29140" cursor="1" ephemere="0" grid="0" grid_steps="1,1" label="0" multicolor="0" multilabel="0" nbr="1" physic="1" polyphony="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/taille/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -55,10 +57,12 @@ for (i=0 ; i<sizeof(x) ; i++){
 <WINDOW class="CustomButton" text="pos_lockX" x="497" y="79" width="106" height="52" id="3" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="30928,13304050" label_off="lockX" label_on="unlockX" outline="1">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/pos_lockX/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/pos_lockX/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onPress()" script="setexpression(position, 'holdX', x);" trigger_script="x" trigger_type="0" trigger="1" osc_message="/layer/_1/pos_lockX/onPress" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 <WINDOW class="CustomButton" text="pos_lockY" x="497" y="131" width="106" height="52" id="4" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="30928,13304050" label_off="lockY" label_on="unlockY" outline="1">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_1/pos_lockY/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/pos_lockY/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onPress()" script="setexpression(position, 'holdY', x);" trigger_script="x" trigger_type="0" trigger="1" osc_message="/layer/_1/pos_lockY/onPress" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 <WINDOW class="LemurMenu" text="posMode" x="14" y="0" width="160" height="60" id="5" state="241" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" scale="0" content="offScreen,center,onScreen">
 <PARAM name="selection=" value="0.000000" send="1" osc_target="0" osc_trigger="1" osc_message="/layer/_1/posMode/selection" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -116,6 +120,12 @@ for (i=0 ; i<sizeof(x) ; i++){
 </WINDOW>
 <WINDOW class="Text" text="layer1" x="377" y="0" width="257" height="60" id="19" state="241" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="Layer 1">
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/layer1/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Monitor" text="posX" x="497" y="191" width="114" height="60" id="22" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" label="1" precision="2" unit="" value="0">
+<VARIABLE name="value=120.12" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/posX/value" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Monitor" text="posY" x="611" y="191" width="114" height="60" id="23" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" label="1" precision="2" unit="" value="1">
+<VARIABLE name="value=120.35" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_1/posY/value" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 </WINDOW>
 </WINDOW>
 </WINDOW>
@@ -868,7 +878,7 @@ for (i=0 ; i<sizeof(x) ; i++){
 </WINDOW>
 </WINDOW>
 </WINDOW>
-<WINDOW class="Tab" text="9" x="0" y="0" width="917" height="708" id="9" state="1" group="0" font="tahoma,11,0" >
+<WINDOW class="Tab" text="9" x="0" y="0" width="917" height="708" id="9" state="0" group="0" font="tahoma,11,0" >
 <WINDOW class="Container" text="_9" x="0" y="0" width="911" height="708" id="2" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="9440511" label="1" tabbar="1" meta="0">
 <WINDOW class="Fader" text="opacity" x="806" y="9" width="89" height="683" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" color="6451712" cursor="0" grid="0" grid_steps="1" label="1" physic="1" precision="3" unit="" value="0" zoom="1.000000">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_9/opacity/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
@@ -911,6 +921,8 @@ for (i=0 ; i<sizeof(x) ; i++){
 <WINDOW class="CustomButton" text="pos_lockX" x="497" y="79" width="106" height="52" id="3" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="30928,13304050" label_off="lockX" label_on="unlockX" outline="1">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_9/pos_lockX/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
 <VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/layer/_9/pos_lockX/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onPress()" script="decl positionObject = findobject('position');
+setattribute(positionObject, 'holdX', x);" trigger_script="x" trigger_type="0" trigger="1" osc_message="/layer/_9/pos_lockX/onPress" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
 </WINDOW>
 <WINDOW class="CustomButton" text="pos_lockY" x="497" y="131" width="106" height="52" id="4" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="30928,13304050" label_off="lockY" label_on="unlockY" outline="1">
 <PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/layer/_9/pos_lockY/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
