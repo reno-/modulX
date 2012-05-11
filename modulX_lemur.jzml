@@ -21,19 +21,19 @@ for (i=0 ; i<sizeof(x) ; i++){
 			oscout(0, '/layer.4/select', 1);
 		}
 		else if (i == 4){
-			oscout(0, '/layer.1/select', 1);
-		}
-		else if (i == 5){
 			oscout(0, '/layer.5/select', 1);
 		}
-		else if (i == 6){
+		else if (i == 5){
 			oscout(0, '/layer.6/select', 1);
 		}
-		else if (i == 7){
+		else if (i == 6){
 			oscout(0, '/layer.7/select', 1);
 		}
-		else if (i == 8){
+		else if (i == 7){
 			oscout(0, '/layer.8/select', 1);
+		}
+		else if (i == 8){
+			oscout(0, '/master/reset', 1);
 		}
 
 	}
